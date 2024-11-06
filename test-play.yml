@@ -1,0 +1,11 @@
+---
+
+- hosts: localhost
+  vars:
+    my_var: "Hello, Ansible!"
+  roles:
+  - role: print_variable_one
+    tags: print_one
+
+  - role: print_variable_two
+    tags: print_two
